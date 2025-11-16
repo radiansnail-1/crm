@@ -19,3 +19,8 @@ def hello_with_date(name: str, today: Optional[date] = None) -> str:
         today = date.today()
 
     return f"Hello {name}, today is {today.isoformat()}"
+
+if __name__ == "__main__":
+    from datetime import date
+    print(hello("Brian"))
+    print(hello_with_date("Brian", date(2025, 11, 16)))
